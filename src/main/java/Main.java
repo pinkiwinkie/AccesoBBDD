@@ -11,7 +11,8 @@ public class Main {
 
         Connection connection = null;
         try{
-            DataSource dataSource = Conector.getMySQLDataSource();
+//            DataSource dataSource = Conector.getMySQLDataSource();
+        DataSource dataSource = Conector.getMyOracleDataSource();
             connection = dataSource.getConnection();
             if (connection != null)
                 System.out.println("acceso exitoso");
