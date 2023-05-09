@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eecc361a-6347-48f2-bb80-6443262d1ba8" name="Changes" comment="dataSource en Oracle">
-      <change afterPath="$PROJECT_DIR$/src/main/java/TestDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/AlmacenDatosDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Empleado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/MyOracleDataBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/MySqlDataBase.java" afterDir="false" />
+    <list default="true" id="eecc361a-6347-48f2-bb80-6443262d1ba8" name="Changes" comment="recuperar datos en workbench">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dataManagerDeprecated/Conector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dataManagerDeprecated/ConectorMD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dataSource/Conector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dataSource/ConectorDS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/teoria.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/teoria.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TestDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/AlmacenDatosDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/AlmacenDatosDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/MySqlDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/MySqlDataBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683570286926</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="recuperar datos en workbench">
+      <created>1683654434742</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683654434742</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -129,6 +130,7 @@
     <MESSAGE value="dataManager" />
     <MESSAGE value="dataSource" />
     <MESSAGE value="dataSource en Oracle" />
-    <option name="LAST_COMMIT_MESSAGE" value="dataSource en Oracle" />
+    <MESSAGE value="recuperar datos en workbench" />
+    <option name="LAST_COMMIT_MESSAGE" value="recuperar datos en workbench" />
   </component>
 </project>

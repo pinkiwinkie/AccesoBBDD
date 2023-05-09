@@ -72,20 +72,66 @@ public class Empleado {
         return password;
     }
 
+    public String getDni() {
+        return dni;
+    }
+
     public Date getFechaNac() {
         return fechaNac;
     }
+
+    public void setIdEmpleado(int idEmpleado) {
+        this.idEmpleado = idEmpleado;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
+
+    public void setDomicilio(String domicilio) {
+        this.domicilio = domicilio;
+    }
+
+    public void setCp(String cp) {
+        this.cp = cp;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
+
+    public void setFechaNac(Date fechaNac) {
+        this.fechaNac = fechaNac;
+    }
+
     @Override
     public String toString() {
         return "Empleado{" +
                 "idEmpleado=" + idEmpleado +
+                ", dni='" + dni + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", apellidos='" + apellidos + '\'' +
-                ", cp='" + cp + '\'' +
                 ", domicilio='" + domicilio + '\'' +
+                ", cp='" + cp + '\'' +
                 ", email='" + email + '\'' +
-                ", cargo='" + cargo + '\'' +
                 ", password='" + password + '\'' +
+                ", cargo='" + cargo + '\'' +
                 ", fechaNac=" + fechaNac +
                 '}';
     }
