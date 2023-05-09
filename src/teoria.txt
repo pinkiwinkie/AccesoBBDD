@@ -1,1 +1,9 @@
 siempre tiene que tener un controlador.
+--------
+el dataSource hay que cerrarse.
+se puede cerrar en los parentésis del try ->
+    try(){ -> se ponen clases que implementan closable
+    }catch(){}
+-------
+realmente resultSet es un cursor porque no recupera todos los datos a la vez,
+si no que implementa next() y lo va leyendo de poco a poco.

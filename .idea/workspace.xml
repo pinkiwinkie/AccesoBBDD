@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eecc361a-6347-48f2-bb80-6443262d1ba8" name="Changes" comment="dataSource">
+    <list default="true" id="eecc361a-6347-48f2-bb80-6443262d1ba8" name="Changes" comment="dataSource en Oracle">
+      <change afterPath="$PROJECT_DIR$/src/main/java/TestDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/AlmacenDatosDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Empleado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/MyOracleDataBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/MySqlDataBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/db.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dataSource/Conector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataSource/Conector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataManagerDeprecated/Conector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dataManagerDeprecated/ConectorMD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataSource/Conector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dataSource/ConectorDS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/teoria.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/teoria.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +25,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -36,17 +44,21 @@
     </option>
   </component>
   <component name="ProjectId" id="2PWGCkz2jQtDYidRsWnk2PLyfbR" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/home/eruizm/IdeaProjects/AccesoBBDD/src/main/java/model",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -57,7 +69,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.TestDB">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="AccesoBBDD" />
@@ -65,8 +77,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestDB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestDB" />
+      <module name="AccesoBBDD" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestDB" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -94,12 +114,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683569005601</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="dataSource en Oracle">
+      <created>1683570286926</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683570286926</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="dataManager" />
     <MESSAGE value="dataSource" />
-    <option name="LAST_COMMIT_MESSAGE" value="dataSource" />
+    <MESSAGE value="dataSource en Oracle" />
+    <option name="LAST_COMMIT_MESSAGE" value="dataSource en Oracle" />
   </component>
 </project>

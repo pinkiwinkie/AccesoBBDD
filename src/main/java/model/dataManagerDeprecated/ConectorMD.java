@@ -1,11 +1,11 @@
-package dataManagerDeprecated;
+package model.dataManagerDeprecated;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 
 //HOST 10.0.0.21
 //PUERTO 1521
-public class Conector {
+public class ConectorMD {
     public Connection conectarOracle() {
         Connection connection = null;
         try {

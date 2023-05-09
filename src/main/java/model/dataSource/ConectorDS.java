@@ -1,4 +1,4 @@
-package dataSource;
+package model.dataSource;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
 import oracle.jdbc.pool.OracleDataSource;
@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Properties;
 
-public class Conector {
+public class ConectorDS {
     public static DataSource getMySQLDataSource() {
         Properties properties = new Properties();
         MysqlDataSource mysqlDataSource = null;
