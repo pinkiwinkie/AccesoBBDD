@@ -7,3 +7,6 @@ se puede cerrar en los parentésis del try ->
 -------
 realmente resultSet es un cursor porque no recupera todos los datos a la vez,
 si no que implementa next() y lo va leyendo de poco a poco.
+-------
+para comprobar si existe el dato en la tabla se usa -> select count(*)
+    porque es lo más óptimo.

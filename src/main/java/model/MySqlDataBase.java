@@ -95,21 +95,38 @@ public class MySqlDataBase implements AlmacenDatosDB {
     }
 
     @Override
-    public boolean addEmpleado() {
-        boolean add = false;
+    public Empleado addEmpleado(Empleado empleado) {
         DataSource ds = ConectorDS.getMySQLDataSource();
         try (Connection connection = ds.getConnection();
              Statement statement = connection.createStatement()
         ) {
-            String query = "insert into empleado(dni,nombre)" +
-                    "values('6X','helena');";
-            int i = statement.executeUpdate(query);
-            if (i > 0)
-                add=true;
-
-        } catch (SQLException e) {
+            String query = "insert into empleado (nombre, dni) values ('" +empleado.getNombre() +"','"+empleado.getDni()+"');";
+            statement.executeUpdate(query);
+        }catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return add;
+        return empleado;
+    }
+
+    @Override
+    public boolean authenticate(String login, String passwd) {
+        boolean auth = false;
+        //case sensitive
+        String query = "select count(*) from empleado " +
+                "where email ='"+login+"' and password='" + passwd+"';";
+        DataSource ds = ConectorDS.getMySQLDataSource();
+        try (Connection connection = ds.getConnection();
+             Statement statement = connection.createStatement();
+             ResultSet rs = statement.executeQuery(query)
+        ) {
+           rs.next();
+           int count = rs.getInt(1);
+           auth = count != 0;
+
+
+        }catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return auth;
     }
 }

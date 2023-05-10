@@ -1,6 +1,8 @@
 import model.AlmacenDatosDB;
 import model.Empleado;
 import model.MySqlDataBase;
+
+import java.sql.Date;
 import java.util.List;
 
 public class TestDB {
@@ -17,7 +19,7 @@ public class TestDB {
         //System.out.println( db.updateEmpleado(empleado));
         //System.out.println(empleado);
         //System.out.println(db.removeEmpleado(empleado.getDni()));
-        System.out.println(db.addEmpleado());
-
+       // System.out.println(db.addEmpleado(new Empleado(0,"123","123","","","","", Date.valueOf("2023-10-10"),"")));
+        System.out.println(db.authenticate("empleado4@empresa.es","1111"));
     }
 }

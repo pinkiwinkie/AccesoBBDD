@@ -7,5 +7,7 @@ public interface AlmacenDatosDB {
      Empleado getEmpleado(String dni);
      int updateEmpleado(Empleado empleado);
      int removeEmpleado(String dni);
-     boolean addEmpleado();
+     Empleado addEmpleado(Empleado empleado);
+     boolean authenticate(String login, String passwd);
+
 }
