@@ -3,10 +3,7 @@ package model;
 import model.dataSource.ConectorDS;
 
 import javax.sql.DataSource;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 
 public class MySqlDataBase implements AlmacenDatosDB {
@@ -40,13 +37,15 @@ public class MySqlDataBase implements AlmacenDatosDB {
     public Empleado getEmpleado(String dni) {
         Empleado empleado = null;
         DataSource ds = ConectorDS.getMySQLDataSource();
+        String query = "SELECT * FROM empleado where dni = ?;";
         try (Connection connection = ds.getConnection();
              //el statement execute the query
-             Statement statement = connection.createStatement();
+             PreparedStatement preparedStatement = connection.prepareStatement(query)
              //conjunto de resultados
-             ResultSet resultSet = statement.executeQuery("SELECT * FROM empleado where dni = '" + dni + "';")
         ) {
-            if (resultSet.next()) {
+            preparedStatement.setString(1,dni);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
                 empleado = new Empleado(resultSet.getInt("id"), resultSet.getString("DNI"),
                         resultSet.getString(3), resultSet.getString(4), resultSet.getString(5), resultSet.getString(6),
                         resultSet.getString("email"), resultSet.getDate(8), resultSet.getString(9));
@@ -107,13 +106,13 @@ public class MySqlDataBase implements AlmacenDatosDB {
         }
         return empleado;
     }
-
+//CAMBIARLO AL PREPAREDSTATEMENT -> evita SqlInjection
     @Override
     public boolean authenticate(String login, String passwd) {
         boolean auth = false;
         //case sensitive
         String query = "select count(*) from empleado " +
-                "where email ='"+login+"' and password='" + passwd+"';";
+                "where email = ? and password= ?;";
         DataSource ds = ConectorDS.getMySQLDataSource();
         try (Connection connection = ds.getConnection();
              Statement statement = connection.createStatement();
@@ -128,5 +127,28 @@ public class MySqlDataBase implements AlmacenDatosDB {
             throw new RuntimeException(e);
         }
         return auth;
+    }
+
+    @Override
+    public ArrayList<Empleado> getEmpleadosPorCargo(String cargo) {
+        DataSource ds = ConectorDS.getMySQLDataSource();
+        ArrayList<Empleado> empleados = new ArrayList<Empleado>();
+        String query = "select * from empleado where cargo = ?";
+        try (Connection connection = ds.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(query)
+        ) {//el 1 es la posicion del ?, si hubiere mas, irian en orden.
+            preparedStatement.setString(1,cargo);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            Empleado empleado;
+            while (resultSet.next()) {
+                empleado = new Empleado(resultSet.getInt("id"), resultSet.getString("DNI"),
+                        resultSet.getString(3), resultSet.getString(4), resultSet.getString(5), resultSet.getString(6),
+                        resultSet.getString("email"), resultSet.getDate(8), resultSet.getString(9));
+                empleados.add(empleado);
+            }
+        }catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return empleados;
     }
 }

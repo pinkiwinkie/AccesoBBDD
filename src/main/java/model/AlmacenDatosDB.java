@@ -9,5 +9,5 @@ public interface AlmacenDatosDB {
      int removeEmpleado(String dni);
      Empleado addEmpleado(Empleado empleado);
      boolean authenticate(String login, String passwd);
-
-}
+     ArrayList<Empleado> getEmpleadosPorCargo(String cargo) ;
+ }
