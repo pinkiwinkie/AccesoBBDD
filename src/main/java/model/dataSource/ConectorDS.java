@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Properties;
 
-public class
+public class ConectorDS{
     public static DataSource getMySQLDataSource() {
         Properties properties = new Properties();
         MysqlDataSource mysqlDataSource = null;

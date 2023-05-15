@@ -5,6 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eecc361a-6347-48f2-bb80-6443262d1ba8" name="Changes" comment="arreglar conectorDS">
+      <change afterPath="$PROJECT_DIR$/.attach_pid1850" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TestCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/taserfan/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/taserfan/Coche.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/taserfan/GestionCoche.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/taserfan/IGestionCoches.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/taserfan/Vehiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/dataSource/ConectorDS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dataSource/ConectorDS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,19 +44,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/AlgoritmoGaleShapley" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "/home/eruizm/IdeaProjects/AccesoBBDD/src/main/java/model/taserfan"
+  }
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/model/taserfan" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestDB">
+  <component name="RunManager" selected="Application.TestCar">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="AccesoBBDD" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestCar" />
       <module name="AccesoBBDD" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -72,8 +92,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestDB" />
+        <item itemvalue="Application.TestCar" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.TestDB" />
       </list>
     </recent_temporary>
   </component>
