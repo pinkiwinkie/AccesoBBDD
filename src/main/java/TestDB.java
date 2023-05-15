@@ -20,7 +20,7 @@ public class TestDB {
         //System.out.println( db.updateEmpleado(empleado));
         //System.out.println(empleado);
         //System.out.println(db.removeEmpleado(empleado.getDni()));
-        System.out.println(db.addEmpleado(new Empleado(0,"123E","ppt","mmm",",m¡micasa","123","aa@aa.es", Date.valueOf("2023-10-10"),"empresaria","123")));
+        System.out.println(db.addEmpleado(new Empleado(0,"354C","ppt6","teqer","la casa6","134","mme@ptet.es", Date.valueOf("2023-10-10"),"desemple","123")));
         //System.out.println(db.authenticate("empleado4@empresa.es","1111"));
 //        System.out.println(db.getEmpleadosPorCargo("empleada"));
         //System.out.println(db.getEmpleado("4X"));

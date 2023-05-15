@@ -111,7 +111,7 @@ public class MySqlDataBase implements AlmacenDatosDB {
     public boolean addEmpleado(Empleado empleado) {
         boolean insert = false;
         DataSource ds = ConectorDS.getMySQLDataSource();
-        String query = "{ call insertarEmpleado(?,?,?,?,?,?,?,?,?) };";
+        String query = "{ call insertarCliente(?,?,?,?,?,?,?,?,?) };";
         try (Connection connection = ds.getConnection();
              CallableStatement callableStatement = connection.prepareCall(query)
         ) {
@@ -125,8 +125,7 @@ public class MySqlDataBase implements AlmacenDatosDB {
             callableStatement.setDate(7, empleado.getFechaNac());
             callableStatement.setString(8, empleado.getCargo());
             callableStatement.setString(9, empleado.getPassword());
-            callableStatement.executeQuery();
-
+            insert = callableStatement.executeUpdate() == 1;
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
